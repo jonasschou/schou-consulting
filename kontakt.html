@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kontakt – Schou Consulting</title>
+<meta name="description" content="Kontakt Schou Consulting om en ny hjemmeside. Ring på 60 64 99 12, skriv til jonas@schouconsulting.dk, eller send en forespørgsel via formularen.">
+<link rel="canonical" href="https://www.schouconsulting.dk/kontakt">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="da_DK">
+<meta property="og:site_name" content="Schou Consulting">
+<meta property="og:title" content="Kontakt – Schou Consulting">
+<meta property="og:description" content="Kontakt Schou Consulting om en ny hjemmeside. Ring på 60 64 99 12, skriv til jonas@schouconsulting.dk, eller send en forespørgsel via formularen.">
+<meta property="og:url" content="https://www.schouconsulting.dk/kontakt">
+<meta name="theme-color" content="#202123">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23202123'/%3E%3Crect x='6' y='12' width='52' height='40' fill='none' stroke='%23F2F0EB' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23F2F0EB' text-anchor='middle'%3ESC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Schou Consulting","url":"https://www.schouconsulting.dk/","description":"Design, udvikling og vedligeholdelse af hjemmesider til virksomheder.","telephone":"+45 60 64 99 12","email":"jonas@schouconsulting.dk","founder":{"@type":"Person","name":"Jonas Schou van der Weiden"},"areaServed":"DK","slogan":"En naturlig del af jeres forretning"}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Schou Consulting, forside">
+      <span class="mark mark-sm" aria-hidden="true">SC</span>
+      <span class="caps">Schou Consulting</span>
+    </a>
+    <nav aria-label="Hovedmenu">
+      <a href="/ydelser">Ydelser</a>
+      <a href="/priser">Priser</a>
+      <a class="btn btn-line" href="/kontakt" aria-current="page">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="contact" id="kontakt">
+    <div class="wrap">
+      <div class="contact-info">
+        <p class="caps">Kontakt</p>
+        <h1 class="page-title">Lad os tage en snak</h1>
+        <p class="lead">Fortæl kort om jeres virksomhed og hvad I har brug for, så vender jeg tilbage med et uforpligtende tilbud.</p>
+        <p class="person">Jonas Schou van der Weiden</p>
+        <div class="details">
+          <span class="detail"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Telefon: </span>60 64 99 12</span></span>
+          <span class="detail"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg><span><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">E-mail: </span>jonas@schouconsulting.dk</span></span>
+        </div>
+      </div>
+      <form id="kontaktform" action="https://formspree.io/f/mnpjkdvd" method="POST">
+        <input type="hidden" name="_subject" value="Ny henvendelse fra schouconsulting.dk">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+        <label for="navn">Navn<input id="navn" name="navn" type="text" autocomplete="name" required></label>
+        <label for="email">E-mail<input id="email" name="email" type="email" autocomplete="email" required></label>
+        <label for="firma">Virksomhed<input id="firma" name="firma" type="text" autocomplete="organization"></label>
+        <div class="form-row">
+          <label for="pakke">Pakke<select id="pakke" name="pakke">
+            <option value="">Ved ikke endnu</option>
+            <option value="Start">Start</option>
+            <option value="Standard">Standard</option>
+            <option value="Plus">Plus</option>
+          </select></label>
+          <label for="bindingsperiode">Bindingsperiode<select id="bindingsperiode" name="bindingsperiode">
+            <option value="">Ved ikke endnu</option>
+            <option value="12 måneder">12 måneder</option>
+            <option value="24 måneder">24 måneder</option>
+            <option value="36 måneder">36 måneder</option>
+          </select></label>
+        </div>
+        <label for="besked">Hvad skal jeres hjemmeside kunne?<textarea id="besked" name="besked"></textarea></label>
+        <button class="btn btn-solid" type="submit" id="sendknap">Send forespørgsel</button>
+        <p class="thanks" id="tak" role="status" hidden>Tak for din henvendelse! Jeg vender tilbage hurtigst muligt.</p>
+        <p class="thanks" id="fejl" role="alert" hidden>Beskeden kunne ikke sendes. Prøv igen om lidt, eller skriv direkte til jonas@schouconsulting.dk.</p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span class="mark mark-sm" aria-hidden="true">SC</span>
+    <p class="tag">En naturlig del af jeres forretning</p>
+    <nav class="footer-nav" aria-label="Sidefod">
+      <a href="/">Forside</a>
+      <a href="/ydelser">Ydelser</a>
+      <a href="/priser">Priser</a>
+      <a href="/kontakt">Kontakt</a>
+    </nav>
+    <small>© 2026 Schou Consulting · jonas@schouconsulting.dk · 60 64 99 12</small>
+  </div>
+</footer>
+<script src="/main.js"></script>
+</body>
+</html>
